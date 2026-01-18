@@ -1,0 +1,15 @@
+.about-page {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.about-page h2 {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.about-page a {
+  color: #0066cc;
+}

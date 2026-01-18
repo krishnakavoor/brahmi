@@ -1,0 +1,9 @@
+.create-tshirt-page { padding: 2rem; max-width: 800px; margin: 0 auto; text-align: left }
+.tshirt-form { display: grid; gap: .75rem; margin-top: 1rem }
+.tshirt-form label { display: flex; flex-direction: column; font-size: .95rem }
+.tshirt-form input, .tshirt-form select, .tshirt-form textarea { padding: .5rem; border: 1px solid #ddd; border-radius: 4px }
+.tshirt-preview { margin-top: 1.25rem }
+.tshirt { width: 220px; height: 240px; margin: 0 auto; border-radius: 8px; display:flex; align-items:center; justify-content:center; box-shadow: 0 6px 16px rgba(0,0,0,0.08) }
+.tshirt-text { color: #111; font-weight: 700; font-size: 1.1rem }
+.tshirt-size { text-align:center; margin-top: .5rem; color: #666 }
+.tshirt-meta { text-align:center; margin-top: .5rem; color: #666; font-size: .95rem }
