@@ -12,7 +12,12 @@ export default function Home() {
     <div className="create-tshirt-page">
       <h2>Create Infographic</h2>
       <p>Design your T‑shirt — pick a color, size, select language and font, and add custom text.</p>
-
+      <div className="tshirt-preview">
+        <div className="tshirt" style={{ backgroundColor: color }}>
+          <p className="tshirt-text" style={{ fontFamily: font }} lang={language}>{text}</p>
+        </div>
+        <div className="tshirt-meta">Language: {language.toUpperCase()} • Font: {font}</div>
+      </div>
       <form
         className="tshirt-form"
         onSubmit={(e) => {
@@ -54,12 +59,7 @@ export default function Home() {
         <button type="submit">Create T‑Shirt</button>
       </form>
 
-      <div className="tshirt-preview">
-        <div className="tshirt" style={{ backgroundColor: color }}>
-          <p className="tshirt-text" style={{ fontFamily: font }} lang={language}>{text}</p>
-        </div>
-        <div className="tshirt-meta">Language: {language.toUpperCase()} • Font: {font}</div>
-      </div>
+      
     </div>
   )
 }
