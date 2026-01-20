@@ -1,0 +1,176 @@
+{
+  "English": [
+    {
+      "id": 1,
+      "name": "Roboto",
+      "family": "Roboto, sans-serif",
+      "weight": 400,
+      "style": "normal",
+      "size": "16px",
+      "description": "A modern, clean sans-serif font perfect for English text"
+    },
+    {
+      "id": 2,
+      "name": "Open Sans",
+      "family": "Open Sans, sans-serif",
+      "weight": 400,
+      "style": "normal",
+      "size": "16px",
+      "description": "A friendly and open sans-serif font suitable for English"
+    },
+    {
+      "id": 3,
+      "name": "Lato",
+      "family": "Lato, sans-serif",
+      "weight": 400,
+      "style": "normal",
+      "size": "16px",
+      "description": "A warm, stable sans-serif font ideal for English content"
+    }
+  ],
+  "Kannada": [
+    {
+      "id": 4,
+      "name": "Noto Sans Kannada",
+      "family": "Noto Sans Kannada, sans-serif",
+      "weight": 400,
+      "style": "normal",
+      "size": "16px",
+      "description": "Google's Noto Sans font optimized for Kannada script"
+    },
+    {
+      "id": 5,
+      "name": "Tunga",
+      "family": "Tunga, sans-serif",
+      "weight": 400,
+      "style": "normal",
+      "size": "16px",
+      "description": "A traditional Kannada font with excellent readability"
+    },
+    {
+      "id": 6,
+      "name": "Kedage",
+      "family": "Kedage, serif",
+      "weight": 400,
+      "style": "normal",
+      "size": "16px",
+      "description": "A beautiful serif font for Kannada text"
+    }
+  ],
+  "Hindi": [
+    {
+      "id": 7,
+      "name": "Noto Sans Devanagari",
+      "family": "Noto Sans Devanagari, sans-serif",
+      "weight": 400,
+      "style": "normal",
+      "size": "16px",
+      "description": "Google's Noto Sans font optimized for Hindi and Devanagari script"
+    },
+    {
+      "id": 8,
+      "name": "Lora Devanagari",
+      "family": "Lora Devanagari, serif",
+      "weight": 400,
+      "style": "normal",
+      "size": "16px",
+      "description": "A elegant serif font suitable for Hindi text"
+    },
+    {
+      "id": 9,
+      "name": "Poppins",
+      "family": "Poppins, sans-serif",
+      "weight": 400,
+      "style": "normal",
+      "size": "16px",
+      "description": "A geometric sans-serif font that works well with Hindi"
+    }
+  ],
+  "Telugu": [
+    {
+      "id": 10,
+      "name": "Noto Sans Telugu",
+      "family": "Noto Sans Telugu, sans-serif",
+      "weight": 400,
+      "style": "normal",
+      "size": "16px",
+      "description": "Google's Noto Sans font optimized for Telugu script"
+    },
+    {
+      "id": 11,
+      "name": "Ramabhadra",
+      "family": "Ramabhadra, sans-serif",
+      "weight": 400,
+      "style": "normal",
+      "size": "16px",
+      "description": "A classic Telugu font with perfect character rendering"
+    },
+    {
+      "id": 12,
+      "name": "Peddana",
+      "family": "Peddana, serif",
+      "weight": 400,
+      "style": "normal",
+      "size": "16px",
+      "description": "A traditional serif font ideal for Telugu publications"
+    }
+  ],
+  "Tamil": [
+    {
+      "id": 13,
+      "name": "Noto Sans Tamil",
+      "family": "Noto Sans Tamil, sans-serif",
+      "weight": 400,
+      "style": "normal",
+      "size": "16px",
+      "description": "Google's Noto Sans font optimized for Tamil script"
+    },
+    {
+      "id": 14,
+      "name": "Lora Tamil",
+      "family": "Lora Tamil, serif",
+      "weight": 400,
+      "style": "normal",
+      "size": "16px",
+      "description": "An elegant serif font for Tamil text"
+    },
+    {
+      "id": 15,
+      "name": "Mukta Tamil",
+      "family": "Mukta Tamil, sans-serif",
+      "weight": 400,
+      "style": "normal",
+      "size": "16px",
+      "description": "A modern, humanist sans-serif font for Tamil content"
+    }
+  ],
+  "Gujarati": [
+    {
+      "id": 16,
+      "name": "Noto Sans Gujarati",
+      "family": "Noto Sans Gujarati, sans-serif",
+      "weight": 400,
+      "style": "normal",
+      "size": "16px",
+      "description": "Google's Noto Sans font optimized for Gujarati script"
+    },
+    {
+      "id": 17,
+      "name": "Akshar",
+      "family": "Akshar, sans-serif",
+      "weight": 400,
+      "style": "normal",
+      "size": "16px",
+      "description": "A modern sans-serif font designed for Gujarati text"
+    },
+    {
+      "id": 18,
+      "name": "Shantell Sans Gujarati",
+      "family": "Shantell Sans Gujarati, serif",
+      "weight": 400,
+      "style": "normal",
+      "size": "16px",
+      "description": "A traditional serif font for Gujarati publications"
+    }
+  ]
+}

@@ -5,6 +5,7 @@ import About from './pages/About.jsx'
 import Contact from './pages/Contact.jsx'
 import CreateMug from './pages/CreateMug.jsx'
 import CreateTShirt from './pages/CreateTShirt.jsx'
+import Privacy from './pages/Privacy.jsx'
 import Header from './components/Header.jsx'
 import Footer from './components/Footer.jsx'
 import Home from './pages/Home.jsx'
@@ -20,6 +21,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/create-mug" element={<CreateMug />} />
           <Route path="/create-tshirt" element={<CreateTShirt />} />
+          <Route path="/privacy" element={<Privacy />} />
         </Routes>
       </main>
       <Footer />
