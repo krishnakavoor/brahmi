@@ -66,3 +66,11 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+@font-face {
+  font-family: 'ATS-Bandipura-Bold';
+  src: url('/src/assets/fonts/kannada/ATS-Bandipura/WEB/ATSBandipura-Bold.woff2') format('woff2'),
+       url('/src/assets/fonts/kannada/ATS-Bandipura/WEB/ATSBandipura-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

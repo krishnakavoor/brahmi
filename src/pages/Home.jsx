@@ -4,7 +4,7 @@ import fontsData from '../fonts.json'
 
 export default function Home() {
   const [color, setColor] = useState('#ffffff')
-  const [text, setText] = useState('My Tee')
+  const [text, setText] = useState('ಬೇವ ಋಷಿ')
   const [language, setLanguage] = useState('English')
   const [font, setFont] = useState('')
   const [availableFonts, setAvailableFonts] = useState([])
@@ -29,7 +29,6 @@ export default function Home() {
     }
   }, [language])
 
-  console.log(text)
 
   return (
     <div className="create-tshirt-page">

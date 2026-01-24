@@ -31,12 +31,12 @@
   "Kannada": [
     {
       "id": 4,
-      "name": "Noto Sans Kannada",
-      "family": "Noto Sans Kannada, sans-serif",
+      "name": "Bandipura",
+      "family": "ATS-Bandipura-Bold, sans-serif",
       "weight": 400,
       "style": "normal",
       "size": "16px",
-      "description": "Google's Noto Sans font optimized for Kannada script"
+      "description": "Badipura font for Kannada script"
     },
     {
       "id": 5,
