@@ -1,8 +1,10 @@
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
+import { toPng } from 'html-to-image'
 import fontsData from '../fonts.json'
 
 export default function Home() {
+  const previewRef = useRef(null)
   const [color, setColor] = useState('#000000')
   const [backgroundColor, setBackgroundColor] = useState('#ffffff')
   const [text, setText] = useState('ಬೇವ ಋಷಿ')
@@ -30,12 +32,25 @@ export default function Home() {
     }
   }, [language])
 
-
-  return (
+  const downloadImage = async () => {
+    if (previewRef.current) {
+      try {
+        const dataUrl = await toPng(previewRef.current)
+        const link = document.createElement('a')
+        link.href = dataUrl
+        link.download = 'tshirt-preview.png'
+        link.click()
+      } catch (err) {
+        console.error('Failed to capture image:', err)
+        alert('Error downloading image. Please try again.')
+      }
+    }
+  }
+    return (
     <div className="create-tshirt-page">
       <h2>Create Infographic</h2>
       <p>Design your T‑shirt — pick a color, size, select language and font, and add custom text.</p>
-      <div className="tshirt-preview">
+      <div className="tshirt-preview" ref={previewRef}>
         <div className="tshirt" style={{ backgroundColor: backgroundColor }}>
           <p className="tshirt-text" style={{ fontFamily: font, color: color }} lang={language}>{text}</p>
         </div>
@@ -45,7 +60,7 @@ export default function Home() {
         className="tshirt-form"
         onSubmit={(e) => {
           e.preventDefault()
-          alert(`T‑Shirt created (demo): ${text} |  color: ${color} | lang: ${language} | font: ${font}`)
+          downloadImage();
         }}
       >
         <div className='row'>
@@ -89,8 +104,6 @@ export default function Home() {
 
         <button type="submit">Download Image</button>
       </form>
-
-      
     </div>
   )
 }
