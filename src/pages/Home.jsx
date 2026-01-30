@@ -3,7 +3,8 @@ import { useState, useEffect } from 'react'
 import fontsData from '../fonts.json'
 
 export default function Home() {
-  const [color, setColor] = useState('#ffffff')
+  const [color, setColor] = useState('#000000')
+  const [backgroundColor, setBackgroundColor] = useState('#ffffff')
   const [text, setText] = useState('ಬೇವ ಋಷಿ')
   const [language, setLanguage] = useState('English')
   const [font, setFont] = useState('')
@@ -35,8 +36,8 @@ export default function Home() {
       <h2>Create Infographic</h2>
       <p>Design your T‑shirt — pick a color, size, select language and font, and add custom text.</p>
       <div className="tshirt-preview">
-        <div className="tshirt" style={{ backgroundColor: color }}>
-          <p className="tshirt-text" style={{ fontFamily: font }} lang={language}>{text}</p>
+        <div className="tshirt" style={{ backgroundColor: backgroundColor }}>
+          <p className="tshirt-text" style={{ fontFamily: font, color: color }} lang={language}>{text}</p>
         </div>
         <div className="tshirt-meta">Language: {language.toUpperCase()} • Font: {font}</div>
       </div>
@@ -58,6 +59,10 @@ export default function Home() {
           </select>
         </label>
         </div>
+         <div className='col-md-2'> <label>
+          Background Color
+          <input type="color" value={backgroundColor} onChange={(e) => setBackgroundColor(e.target.value)} />
+        </label></div>
           <div className='col-md-2'> <label>
           Text Color
           <input type="color" value={color} onChange={(e) => setColor(e.target.value)} />
