@@ -7,9 +7,11 @@ export default function Home() {
   const previewRef = useRef(null)
   const [color, setColor] = useState('#000000')
   const [backgroundColor, setBackgroundColor] = useState('#ffffff')
+  const [backgroundImage, setBackgroundImage] = useState('')
   const [text, setText] = useState('ಬೇವ ಋಷಿ')
   const [language, setLanguage] = useState('English')
   const [font, setFont] = useState('')
+  const [fontSize, setFontSize] = useState(48)
   const [availableFonts, setAvailableFonts] = useState([])
   const [languages, setLanguages] = useState([])
 
@@ -32,6 +34,17 @@ export default function Home() {
     }
   }, [language])
 
+  const handleImageUpload = (e) => {
+    const file = e.target.files[0]
+    if (file) {
+      const reader = new FileReader()
+      reader.onload = (event) => {
+        setBackgroundImage(event.target.result)
+      }
+      reader.readAsDataURL(file)
+    }
+  }
+
   const downloadImage = async () => {
     if (previewRef.current) {
       try {
@@ -51,8 +64,8 @@ export default function Home() {
       <h2>Create Infographic</h2>
       <p>Design your T‑shirt — pick a color, size, select language and font, and add custom text.</p>
       <div className="tshirt-preview" ref={previewRef}>
-        <div className="tshirt" style={{ backgroundColor: backgroundColor }}>
-          <p className="tshirt-text" style={{ fontFamily: font, color: color }} lang={language}>{text}</p>
+        <div className="tshirt" style={{ backgroundColor: backgroundColor, backgroundImage: backgroundImage ? `url(${backgroundImage})` : 'none', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+          <p className="tshirt-text" style={{ fontFamily: font, color: color, fontSize: `${fontSize}px` }} lang={language}>{text}</p>
         </div>
         <div className="tshirt-meta">Language: {language.toUpperCase()} • Font: {font}</div>
       </div>
@@ -78,9 +91,18 @@ export default function Home() {
           Background Color
           <input type="color" value={backgroundColor} onChange={(e) => setBackgroundColor(e.target.value)} />
         </label></div>
+         <div className='col-md-2'> <label>
+          Background Image
+          <input type="file" accept="image/*" onChange={handleImageUpload} />
+        </label></div>
           <div className='col-md-2'> <label>
           Text Color
           <input type="color" value={color} onChange={(e) => setColor(e.target.value)} />
+        </label></div>
+          <div className='col-md-2'> <label>
+          Font Size
+          <input type="range" min="12" max="200" value={fontSize} onChange={(e) => setFontSize(Number(e.target.value))} />
+          <span style={{ marginLeft: '10px' }}>{fontSize}px</span>
         </label></div>
       <div className='col-md-6'>
  
